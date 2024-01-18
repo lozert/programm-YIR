@@ -64,6 +64,7 @@ class MainWindow(QMainWindow):
             self.ax.set_xticks(range_step)
 
             self.canvas.draw()
+            self.writeInFile(function_text,x_values, y_values)
 
         except Exception as e:
             print(f"Ошибка при построении графика: {e}")
